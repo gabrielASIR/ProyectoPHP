@@ -1,0 +1,169 @@
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00275e;
+    padding: 10px;
+    color: #ffffff;
+}
+
+#logo img {
+    width: 240px; 
+    height: 180px;
+}
+
+#nombre-tienda span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFC720;
+}
+
+#logusuario a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Estilos para menu.php */
+.menuindex {
+    text-align: center;
+    background-color: #ff3d00;
+}
+
+#enlaces-menuindex {
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#enlaces-menuindex li {
+    display: inline-block;
+}
+
+#enlaces-menuindex a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Estilos para index.php */
+main {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #1D428A;
+}
+
+.tarjeta-producto {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+    width: 320px;
+    height: 460px;
+    border-radius: 5px solid #00275e;
+    background-color: #ffffff;
+}
+
+.tarjeta-producto img {
+    overflow: hidden;
+    width: 320px;
+    height: 210px;
+}
+
+.tarjeta-producto h2 {
+    text-align: center;
+    color: #1D428A;
+}
+
+.tarjeta-producto p {
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.tarjeta-producto a {
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: #ff3d00;
+    font-weight: bolder;
+}
+
+.tarjeta-producto a:link {
+    text-decoration: none;
+}
+
+.tarjeta-producto:hover {
+    transform: scale(1.05);
+}
+  
+.info {
+    padding: 2px 16px;
+}
+
+.productos-confirmacion {
+    background-color: #ff3d00;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para pie.php */
+#pie {
+    background-color: #00275e;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #cabecera {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nombre-tienda span {
+        font-size: 18px;
+    }
+
+    /* Estilos para menu.php en pantallas más pequeñas */
+    #enlaces-menu {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #enlaces-menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para index.php en pantallas más pequeñas */
+    .main {
+        flex-direction: column;
+    }
+
+    .tarjeta-producto {
+        width: 100%;
+    }
+
+    /* Estilos para productos-confirmacion en pantallas más pequeñas */
+    .productos-confirmacion {
+        font-size: 14px;
+    }
+
+    /* Estilos para pie.php en pantallas más pequeñas */
+    #pie {
+        font-size: 14px;
+    }
+}
